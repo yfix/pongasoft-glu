@@ -345,6 +345,7 @@ console.security.roles = [
 
   'GET:/rest/v1/$fabric/plan/$planId/execution/$id': 'USER',
   'HEAD:/rest/v1/$fabric/plan/$planId/execution/$id': 'USER',
+  'DELETE:/rest/v1/$fabric/plan/$planId/execution/$id': 'ADMIN',
 
   /***
    * deployments
@@ -367,6 +368,8 @@ console.security.roles = [
    */
   'POST:/rest/v1/$fabric/model/static': 'ADMIN',
   'GET:/rest/v1/$fabric/model/static': 'USER',
+  'HEAD:/rest/v1/$fabric/models/static': 'USER',
+  'GET:/rest/v1/$fabric/models/static': 'USER',
 
   'GET:/rest/v1/$fabric/model/live': 'USER',
 
